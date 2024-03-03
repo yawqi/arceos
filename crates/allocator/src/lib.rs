@@ -31,6 +31,11 @@ mod tlsf;
 #[cfg(feature = "tlsf")]
 pub use tlsf::TlsfByteAllocator;
 
+#[cfg(feature = "talc")]
+mod talc;
+#[cfg(feature = "talc")]
+pub use talc::TalcByteAllocator;
+
 use core::alloc::Layout;
 use core::ptr::NonNull;
 
